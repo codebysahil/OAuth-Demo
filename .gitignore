@@ -1,0 +1,36 @@
+# Build outputs
+bin/
+obj/
+publish/
+publish.zip
+
+# VS Code
+.vscode/
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+
+# .NET
+*.dll
+*.exe
+*.pdb
+
+# Environment specific
+appsettings.Development.json
+*.local.json
+
+# Secrets - never commit these
+*secrets*
+*secret*
+*.pfx
+*.key
+
+# Azure
+*.pubxml
+*.PublishSettings
+
+# OS
+.DS_Store
+Thumbs.db
