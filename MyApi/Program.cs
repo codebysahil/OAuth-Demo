@@ -4,6 +4,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddApplicationInsightsTelemetry(); // ← add here
 
 // OAuth - tell the API to validate Entra ID tokens
 builder.Services.AddAuthentication()
@@ -14,6 +15,7 @@ var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
 {
+
     app.UseSwagger();
     app.UseSwaggerUI();
 }
